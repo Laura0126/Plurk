@@ -1,0 +1,136 @@
+/*參考資料：https://www.plurk.com/p/n370a5*/
+
+/*Plurk獸語法-已完成*/
+#dynamic_logo img {
+  /*先隱藏原本的影像*/
+  filter: alpha(opacity=0);
+  opacity: 0;
+}
+#dynamic_logo {
+  background-repeat: no-repeat; /*防止背景重複*/
+  height: 400px; /*適當高度*/
+  width: 300px; /*適當寬度*/
+  /*接著，請將以下圖片網址改成你想放的生物*/
+  background-image: url(https://stickershop.line-scdn.net/stickershop/v1/product/6286/LINEStorePC/main.png;compress=true);
+}
+
+/*原噗者的暱稱*/
+.list .highlight_owner .td_qual a {
+  color: #db7093 !important;
+  text-decoration: none;
+}
+
+/*---河道及訊息區---*/
+
+/*浪上的噗與回應數變圓角-已完成*/
+.plurk_cnt,
+.response_count,
+.new .response_count,
+.dots .inner {
+  -moz-border-radius: 10px !important;
+  -webkit-border-radius: 10px !important;
+  -khtml-border-radius: 10px !important;
+  border-radius: 10px !important;
+}
+/*噗半透明-已完成*/
+.plurk {
+  filter: alpha(opacity=70);
+  -moz-opacity: 0.7;
+  opacity: 0.7;
+  zoom: 1;
+}
+/*河道上大頭貼改圓角-已完成*/
+.p_img {
+  border-bottom: none;
+}
+.p_img img {
+  border-radius: 6px;
+}
+
+/*河道上的文字太擠-已完成*/
+.list .text_holder,
+.plurk td {
+  letter-spacing: 1px;
+}
+/*往前往後左右箭頭隱藏-已完成*/
+.browse_button {
+  filter: alpha(opacity=0);
+  opacity: 0;
+  zoom: 1;
+}
+
+/*---河道與主控台中間的時間軸(已完成)---*/
+
+/*時間軸時間數字區隱藏-已完成*/
+/*隱藏時間區-已完成*/
+.div_bottom {
+  filter: alpha(opacity=0);
+  opacity: 0;
+  zoom: 1;
+}
+/*下面那條白線-已完成*/
+#bottom_line {
+  background: none;
+}
+
+/*---主控台---*/
+
+/*頭像大小-已完成(原始設定)*/
+
+/*外框大小-已完成(原始設定)*/
+
+/*頭像右側姓名-已完成*/
+#plurk-dashboard .dash-segment-profile #dash-profile #full_name {
+  /*頭像右側姓名，數值為100+16px, 可自行測試調整*/
+  margin-left: 90px;
+  padding-top: 20px;
+  /*頭像右側姓名字型大小及行高*/
+  line-height: 1;
+  font-size: 20px;
+  text-align: center;
+}
+
+/*頭像右側性別&位置-已完成(隱藏)*/
+#plurk-dashboard .dash-segment-profile #dash-profile .profile-info {
+  filter: alpha(opacity=0);
+  opacity: 0;
+}
+
+/*---下方主控台半透明變化(已完成)---*/
+
+/*不透明度80%-已完成*/
+div#plurk-dashboard {
+  filter: alpha(opacity=80) !important;
+  -moz-opacity: 0.8 !important;
+  opacity: 0.8 !important;
+  zoom: 1;
+  /*數值可自行修改，透明為0，不透明為1*/
+}
+
+/*karma的英文字顏色-已完成*/
+#karma {
+  color: #8b4513;
+}
+/*連結文字(全部)-已完成*/
+a,
+a:link,
+a:visited,
+a:active {
+  color: #db7093 !important;
+}
+/*主控台的好友圖改圓角-已完成*/
+.friend_holder img {
+  border-radius: 6px;
+}
+/*資料區顏色及字型大小-已完成*/
+#dash-stats,
+#dash-stats h2,
+#dash-stats a,
+#dash-stats table tr td,
+#top_login a,
+.segment-content {
+  color: #8b4513;
+}
+
+/*改完才發現電神提供了佈景產生器QQ*/
+/*Link:https://hoshikata.github.io/PlurkCSSGenerator/*/
