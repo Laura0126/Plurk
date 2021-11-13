@@ -14,12 +14,6 @@
   background-image: url(https://stickershop.line-scdn.net/stickershop/v1/product/6286/LINEStorePC/main.png;compress=true);
 }
 
-/*原噗者的暱稱*/
-.list .highlight_owner .td_qual a {
-  color: #db7093 !important;
-  text-decoration: none;
-}
-
 /*---河道及訊息區---*/
 
 /*浪上的噗與回應數變圓角-已完成*/
